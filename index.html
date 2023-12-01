@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
+    <link href="trabalho1.html">
     <title>Portfólio</title>
 </head>
 <body>
+
+    <!--- Header --->
+    <section id="header">
+        <a class="header-title "href="/">
+            <h1>
+                Murillo <span>Stenz</span>
+            </h1>
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#person">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#Trabalhos">Trabalhos</a></li>
+                <li><a href="#Slider">Pesquisa</a></li>
+                <li><a href="#contact">Contatos</a></li>
+            </ul>
+        </nav>
+
+    </section>
+    <!--- End Header --->
+
     <!----- Person ----->
     <section id="person">
         <div class="person-content">
@@ -22,7 +45,7 @@
                     <ul>
                         <li>
                             <div data="HTML"> 
-                                <img src="./svg/html.svg" alt="html-icon">
+                                <img src="/svg/html.svg" alt="html-icon">
                             </div>
                         </li>
                     </ul>
@@ -67,7 +90,7 @@
     </section>
     <!----- End Person ----->
 
-<!----About---->
+    <!----About---->
     <section id="about">
         <div class="background-about">
             <div class="img-wrapper">
@@ -98,7 +121,9 @@
             </h4>
 
             <div class="button-cta">
-                <button>Currículo</button>
+                <a href="public/document/Curriculo.pdf" download="Currículo-Murillo-Stenz" arial-labol="Baixar Currículo">
+                    Currículo
+                </a>
             </div>
         </div>
 
@@ -108,11 +133,11 @@
     <!----Trabalhos----->
     <section id="Trabalhos">
         <div class="Trabalhos-title">
+
             <h2>📚 MELHORES TRABALHOS 📚</h2>
         </div>
 
         <div class="wrapper-Trabalhos">
-
             <div class="card-Trabalhos">
                 <div class="content-Trabalhos">
                     <div class="image-Trabalho">
@@ -126,7 +151,7 @@
                         chamado OpenTutoriais.
                     </p>
                     <div class="cta-Trabalhos">
-                        <a href="/">
+                        <a href="trabalho1.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -147,7 +172,7 @@
                         area do saber.
                     </p>
                     <div class="cta-Trabalhos">
-                        <a href="/">
+                        <a href="trabalho2.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -165,10 +190,10 @@
 
                     <p>Essa é uma atividade sobre o 
                         filme quebrando a banca onde
-                        tinhamos que criar o jogo artesanalmente.
+                        tinhamos que responder perguntas sobre o jogo de blackjack.
                     </p>
                     <div class="cta-Trabalhos">
-                        <a href="/">
+                        <a href="trabalho3.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -192,10 +217,10 @@
                     </div>
                     <span>Ciências Da Natureza</span>
                     
-                    <p>Essa foi uma atividade sobre radiação que fizemos com base na série Chernobyl.
+                    <p>Essa foi uma atividade sobre energia nuclear que fizemos com base na série Chernobyl.
                     </p>
                     <div class="cta-Trabalhos2">
-                        <a href="/">
+                        <a href="trabalho4.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -213,7 +238,7 @@
                     <p>A melhor atividade dessa area foi a que a sala pesquisou sobre embaizadores da URSS e na hora de apresentar tivemos que representa-los em 1º pessoa.
                     </p>
                     <div class="cta-Trabalhos2">
-                        <a href="/">
+                        <a href="trabalho5.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -232,7 +257,7 @@
                     <p>Essa na minha opinião foi a melhor atividade, onde tinhamos que criar uma empresa na area de Ti.
                     </p>
                     <div class="cta-Trabalhos2">
-                        <a href="/">
+                        <a href="trabalho6.html">
                             Abrir Trabalho
                         </a>
                     </div>
@@ -343,5 +368,50 @@
     </section>
     <!----End Slider5---->
 
+    <!---- Contact ---->
+    <section id="contact">
+        <div class="contact-icon-content">
+            <h2>Contato 📞</h2>
+        </div>
+
+        <div class="contact-icon-wrapper"> 
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </div>
+                <div class="contact-info">
+                    <span>Localização</span>
+                    <p>São Paulo, Brasil</p>
+                </div>
+            </div>
+
+            <div class="contact-icon-content">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-info">
+                    <span>Gmail: </span>
+                    <a href="/">
+                        murillostenz10@gmail.com
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!---- End Contact ---->
+
+    <!--- Fim Pagina --->
+    <section id="footer">
+        <div class="container-fim">
+            <h2>Fim da página</h2>
+            <h3>₢ 2023</h3>
+        </div>
+    </section>
+    <!--- End Fim Pagina --->
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

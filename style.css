@@ -26,6 +26,60 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 15px 30px;
+    position: fixed;
+
+    background: 'trasnparent';
+
+    z-index: 2;
+}
+
+.header-title {
+    text-decoration: none;
+}
+
+.header-title h1 {
+    color: var(--color-white);
+
+    font-size: 2rem;
+    transition: opacity .3s ease;
+}
+
+
+.header.title h1:hover {
+    opacity: .8;
+}
+
+.navbar {
+    max-width: 350px;
+    width: 100%;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
 #person {
     height: 100vh;
     width: 100%;
@@ -201,7 +255,7 @@ body {
     padding: 14px;
     margin: 20px 15px;
 
-    border-radius: 100%;
+    border-radius: 50%;
 
     background: 
     radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
@@ -342,7 +396,7 @@ body {
     margin: 4rem 3rem;
 }
 
-.button-cta button {
+.button-cta a {
     display: inline-block;
 
     width: 100%;
@@ -351,15 +405,20 @@ body {
     padding: 10px;
     margin-bottom: 3rem;
 
+    font-size: 1.3rem;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     letter-spacing: .15rem;
+    color: var(--color-black);
+    background: var(--color-white);
+    text-align: center;
+    text-decoration: none;
 
     border-radius: 10px;
     cursor: pointer;
 }
 
-.button-cta button:hover {
+.button-cta a:hover {
     transition: all .3 ease;
     filter: brightness(.8);
 }
@@ -1044,6 +1103,109 @@ body {
 }
 
 /*Fim slides*/
+
+/*Começo Contact*/
+#contact {
+    display: flex;
+    flex-direction: column;
+
+    height: 40vh;
+    width: 100%;
+
+    background: var(--color-black);
+
+    color: var(--color-white);
+}
+
+.contact-icon-content h2 {
+    margin: 3rem;
+    padding: 1rem;
+
+    font-size: 3rem;
+    color: var(--color-white);
+
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-icon-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0rem 3rem;
+    padding: 1rem;
+}
+
+.contact-icon {
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 2rem;
+
+    background: var(--color-black);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.contact-icon i {
+    font-size: 2rem;
+    color: var(--color-darkred);
+}
+
+.contact-info span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.contact-info p {
+   margin: .25rem 0rem;
+}
+
+.contact-icon a {
+    display: block;
+    margin: .25rem 0rem;
+
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+/*Fim Contact*/
+
+/*Fim da pagina*/
+
+#footer {
+    height: 15vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: auto;
+
+    background: var(--color-cinza);
+}
+
+.container-fim {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    color: var(--color-white);
+}
+
+/* End Fim da pagina*/
 
 @keyframes written_text {
     100% {
